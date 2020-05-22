@@ -1,0 +1,16 @@
+---
+
+- name: Apply Base Configs
+  hosts: switches
+  gather_facts: no
+  become: yes
+  become_method: enable
+
+  tasks:
+
+    - name: Apply Base Configs
+      eos_config:
+        src: "configs/{{ inventory_hostname }}-base.cfg"
+        replace: config
+        save_when: always
+
