@@ -16,7 +16,7 @@
      eos_config:
        backup: yes
        backup_options:
-         filename: "{{ inventory_hostname }}-base.cfg"
+         filename: "{{ inventory_hostname }}-bgp.cfg"
          dir_path: "{{ local_git_repo_path }}"
      when: inventory_hostname in groups['switches']
 
