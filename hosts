@@ -12,7 +12,8 @@ ansible_ssh_pass=admin
 ansible_network_os=eos
 ansible_connection=network_cli
 ansible_python_interpreter=/usr/bin/python
-local_git_repo_path = "/Users/mthiel/Desktop/projects/eve-ng-lab"
+local_git_repo_path = "/Users/mthiel/Desktop/projects/eve-ng-lab/backup_configs"
+# Needed since ssh connection to switch does not land in 'enable' mode
 ansible_become=yes
 ansible_become_method=enable
 
