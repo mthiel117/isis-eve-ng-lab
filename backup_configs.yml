@@ -16,7 +16,7 @@
      eos_config:
        backup: yes
        backup_options:
-         filename: "{{ inventory_hostname }}-bgp.cfg"
+         filename: "{{ inventory_hostname }}-isis.cfg"
          dir_path: "{{ local_git_repo_path }}"
      when: inventory_hostname in groups['switches']
 
@@ -33,9 +33,9 @@
           git commit -m "Config snapshot taken $(date +"%Y-%m-%d %H:%M:%S")"
           # Push changes to GitHub
           # Remote repo pre-defined in local git
-          # git remote add origin https://github.com/mthiel117/backups.git
-          # git push -u origin master
-          # git push
+          git remote add origin https://github.com/mthiel117/backups.git
+          git push -u origin master
+          git push
           # Exit needed as git commit will fail if there are no changed files
           exit 0
       args:

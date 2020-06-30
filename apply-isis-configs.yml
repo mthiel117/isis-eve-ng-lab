@@ -10,7 +10,7 @@
 
     - name: Apply Base Configs
       eos_config:
-        src: "backup_configs/{{ inventory_hostname }}-isis-bgp.cfg"
+        src: "backup_configs/{{ inventory_hostname }}-isis.cfg"
         replace: config
         save_when: always
 

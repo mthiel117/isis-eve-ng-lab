@@ -1,0 +1,10 @@
+---
+
+- name: Ping Hosts
+  connection: local
+  gather_facts: no
+
+- tasks:
+
+  - name: Ping Hosts
+    ping:

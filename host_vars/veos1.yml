@@ -1,0 +1,26 @@
+---
+hostname: VEOS1
+isis_net_addr: 49.1111.0000.0000.0001.00
+interfaces:
+  Ethernet1:
+    description: Link to EOS4
+    ip_address: 10.1.4.1/24
+  Ethernet2:
+    description: Link to EOS3
+    ip_address: 10.1.3.1/24
+  Ethernet3:
+    description: Link to EOS2
+    ip_address: 10.1.2.1/24
+  Ethernet4:
+  Ethernet5:
+  Ethernet6:
+    description: Link to EOS6
+    ip_address: 10.1.6.1/24
+  Ethernet7:
+  Ethernet8:
+  Loopback0:
+    ip_address: 1.1.1.1/32
+  Management1:
+    vrf: MGMT
+    ip_address: 192.168.1.180/24
+
