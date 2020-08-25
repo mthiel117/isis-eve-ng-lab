@@ -33,7 +33,7 @@
         git commit -m "Config snapshot taken $(date +"%Y-%m-%d %H:%M:%S")"
         # Push changes to GitHub
         # Remote repo pre-defined in local git
-        git remote add origin https://github.com/mthiel117/backups.git
+        git remote add origin https://github.com/mthiel117/isis-eve-ng-lab.git
         git push -u origin master
         git push
         # Exit needed as git commit will fail if there are no changed files
