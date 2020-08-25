@@ -18,3 +18,11 @@ all:
                   ansible_host: 192.168.1.184
                 veos6:
                   ansible_host: 192.168.1.185
+                veos7:
+                  ansible_host: 192.168.1.186
+                veos8:
+                  ansible_host: 192.168.1.187
+                veos9:
+                  ansible_host: 192.168.1.188
+                veos10:
+                  ansible_host: 192.168.1.189

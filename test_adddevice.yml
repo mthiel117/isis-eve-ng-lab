@@ -1,0 +1,22 @@
+---
+
+- name: "Add Device"
+  connection: local
+  hosts: localhost
+  gather_facts: False
+
+  tasks:
+
+    - name: Add device
+      netbox_device:
+        netbox_url: https://192.168.1.206
+        netbox_token: 87b68611deb1115f5613b56ce2419b4ba24ffd35
+        data:
+          name: SW-TEST1
+          device_type: 7010T
+          device_role: OOB-MGMT
+          platform: EOS
+          site: CISP
+          status: Active
+        state: present
+        validate_certs: no
